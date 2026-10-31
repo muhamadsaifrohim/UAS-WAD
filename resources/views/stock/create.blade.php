@@ -60,7 +60,6 @@
                         <div class="col-md-6 mb-3">
                             <label class="form-label" for="transaction_date">Tanggal</label>
                             <input type="date" id="transaction_date" name="transaction_date"
-                                   max="{{ now()->toDateString() }}"
                                    class="form-control @error('transaction_date') is-invalid @enderror"
                                    value="{{ old('transaction_date', now()->toDateString()) }}">
                             @error('transaction_date')
